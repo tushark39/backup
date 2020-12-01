@@ -36,7 +36,7 @@ const Header = () => {
                     <div className="row">
                         <div className="col-md-8">
                             <div className="header-text">
-                                <h1>Parents Feedback Form </h1>
+                                <h1>Feedback For Backup Class </h1>
                                 <br />
                                 {/* <p>The name QUK ADS is a short form of telling Business People to Advertise Quickly.</p> */}
                             </div>

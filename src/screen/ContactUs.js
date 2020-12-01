@@ -10,7 +10,7 @@ class App extends React.Component {
             uploaded: localStorage.getItem("uploaded_theeguardians_backup_dec") ? true : false,
             name: false,
             email: "",
-            semail: "",
+            aemail: "",
             course: false,
             branch: false,
             sem: false,
@@ -37,7 +37,7 @@ class App extends React.Component {
         this.setState({ minor: e.target.value })
     }
     upload=()=>{
-        
+        console.log(this.state);
          if(this.state.evs===false||!this.state.am||!this.state.dels||!this.state.efe||!this.state.em||!this.state.ep||!this.state.icpc||!this.state.usfe||!this.state.french)   {
             this.setState({errorMessage:"Please Select All Major Subjects!"})
             document.getElementById("contact-us").scrollIntoView()
@@ -52,7 +52,7 @@ class App extends React.Component {
             axios.post('https://amityform2.herokuapp.com/course/form/api',{
             "name": this.state.name,
             "email": this.state.email,
-            "semail": this.state.semail,
+            "aemail": this.state.aemail,
             "course": this.state.course,
             "branch": this.state.branch,
             "sem": this.state.sem,
@@ -77,7 +77,7 @@ class App extends React.Component {
                 this.setState({isUploading:false,uploaded:true});
               })
               .catch(e=>{
-                alert("Please Contact Administration")
+                alert("Please Contact Administration with this screnshot",e.error)
                 this.setState({isUploading:false,uploaded:false,errorMessage:"Please Contact Administration"})
               })
 
@@ -126,7 +126,7 @@ class App extends React.Component {
                             <div className="col-md-10 offset-md-1">
                                 <div className="section-title">
                                     <h2>Form</h2>
-                                    <p>Upload pdf which is clearly visible </p>
+                                    <p><h4><span style={{color:'red'}}>**Select Yes, only if you need extra class for the given subject**</span></h4></p>
                                 </div>
                             </div>
                         </div>
@@ -150,7 +150,9 @@ class App extends React.Component {
                                         <input className="form-control" type="text" id="branch" placeholder="Branch" onChange={(e) => this.setState({ branch: e.target.value })} />
                                         <input className="form-control" type="text" id="course" placeholder="Course" onChange={(e) => this.setState({ course: e.target.value })} />
                                         <input className="form-control" type="text" id="sem" placeholder="Semester" onChange={(e) => this.setState({ sem: e.target.value })} />
-                                        <h4 style={{ marginTop: 30 }}>Major Subjects :-</h4>
+                                        <h3 style={{ marginTop: 30 }}>Major Subjects :-</h3>
+                                        <h4><span style={{color:'red'}}>**Select Yes, only if you need extra class for the given subject**</span></h4>
+
                                         <div>
                                             INTRODUCTION TO ENVIRONMENTAL STUDIES :- <br />
                                             <input value="yes" name="evs" type="radio" onChange={(e) => this.setState({ evs: "yes" })} />Yes
@@ -204,7 +206,9 @@ class App extends React.Component {
                                                 {/* {this.state.errorMessage} */}
                                             </div>
                                         }
-                                        <h4 style={{ marginTop: 30 }}>Minor Tracks :-</h4>
+                                        <h3 style={{ marginTop: 30 }}>Minor Tracks :-</h3>
+                                        <h4><span style={{color:'red'}}>**Select Yes, only if you need extra class for the given subject**</span></h4>
+
                                         <div style={{ marginTop: 20 }}>
                                             Management Foundation :- <br />
 
