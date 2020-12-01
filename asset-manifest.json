@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/tushark39.github.io/backup/static/css/main.69eda509.chunk.css",
+    "main.js": "/tushark39.github.io/backup/static/js/main.97972d94.chunk.js",
+    "main.js.map": "/tushark39.github.io/backup/static/js/main.97972d94.chunk.js.map",
+    "runtime-main.js": "/tushark39.github.io/backup/static/js/runtime-main.a821d8ab.js",
+    "runtime-main.js.map": "/tushark39.github.io/backup/static/js/runtime-main.a821d8ab.js.map",
+    "static/js/2.ab6f45e9.chunk.js": "/tushark39.github.io/backup/static/js/2.ab6f45e9.chunk.js",
+    "static/js/2.ab6f45e9.chunk.js.map": "/tushark39.github.io/backup/static/js/2.ab6f45e9.chunk.js.map",
+    "index.html": "/tushark39.github.io/backup/index.html",
+    "precache-manifest.6ed39ae5405876ce472c992971b6117a.js": "/tushark39.github.io/backup/precache-manifest.6ed39ae5405876ce472c992971b6117a.js",
+    "service-worker.js": "/tushark39.github.io/backup/service-worker.js",
+    "static/css/main.69eda509.chunk.css.map": "/tushark39.github.io/backup/static/css/main.69eda509.chunk.css.map",
+    "static/js/2.ab6f45e9.chunk.js.LICENSE.txt": "/tushark39.github.io/backup/static/js/2.ab6f45e9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a821d8ab.js",
+    "static/js/2.ab6f45e9.chunk.js",
+    "static/css/main.69eda509.chunk.css",
+    "static/js/main.97972d94.chunk.js"
+  ]
+}
